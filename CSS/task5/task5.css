@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    width: 600px;
+    background: #d4d700;
+    padding: 20px;
+}
+
+.menu {
+    width: 150px;
+    background: #ffffff;
+    padding: 10px;
+}
+
+.menu a {
+    display: block;
+    color: blue;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.menu a:hover {
+    background: lightgray;
+}
+
+.content {
+    padding-left: 20px;
+}
+
+h1 {
+    color: darkblue;
+}

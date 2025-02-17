@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3.html</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 30px;
+            width: 70%;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .links a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Click any of the following Links</h3>
+        <div class="links">
+            <a href="https://example.com" target="_blank">Opens in New</a> |
+            <a href="https://example.com" target="_self">Opens in Self</a> |
+            <a href="https://example.com" target="_parent">Opens in Parent</a> |
+            <a href="https://example.com" target="_top">Opens in Body</a> |
+            <a href="mailto:someone@example.com">Send email</a>
+        </div>
+    </div>
+</body>
+</html>
