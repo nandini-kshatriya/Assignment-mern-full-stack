@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task 1 - Reverse Number</title>
+</head>
+<body>
+    <form>
+        <label for="numberInput">Enter a number:</label>
+        <input type="number" id="numberInput" required>
+        <button type="button" onclick="reverseNumber()">Reverse</button>
+    </form>
+    <p>Reversed Number: <span id="result"></span></p>
+
+    <script>
+        // Function to reverse a number
+        function reverseNumber() {
+            // Getting the number input from the user and converting to string for manipulation
+            const numberInput = document.getElementById('numberInput').value.toString();
+
+            // Splitting the string, reversing it, and joining it back
+            const reversedNumber = numberInput.split('').reverse().join('');
+
+            // Displaying the reversed number in the result span
+            document.getElementById('result').textContent = reversedNumber;
+        }
+
+        // Example function to demonstrate reversing a fixed number (32243)
+        function reverseFixedNumber() {
+            const x = 32243;
+            const reversedFixed = x.toString().split('').reverse().join('');
+            console.log(`Reversed Number for ${x}:`, reversedFixed);  // Output: 34223
+        }
+
+        // Call example function to see the sample output in console
+        reverseFixedNumber();
+    </script>
+</body>
+</html>

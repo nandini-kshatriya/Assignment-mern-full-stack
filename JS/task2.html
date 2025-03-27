@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task 2 - Sort String Alphabetically</title>
+</head>
+<body>
+    <form>
+        <label for="stringInput">Enter a string:</label>
+        <input type="text" id="stringInput" required>
+        <button type="button" onclick="sortString()">Sort</button>
+    </form>
+    <p>Sorted String: <span id="result"></span></p>
+
+    <script>
+        // Function to sort a string's letters in alphabetical order
+        function sortString() {
+            // Getting the input string from the user
+            const stringInput = document.getElementById('stringInput').value;
+
+            // Splitting the string into an array, sorting alphabetically, and joining it back into a string
+            const sortedString = stringInput.split('').sort().join('');
+
+            // Displaying the sorted string in the result span
+            document.getElementById('result').textContent = sortedString;
+        }
+
+        // Example to demonstrate sorting with sample string 'webmaster'
+        function exampleSortString() {
+            const sampleString = 'webmaster';
+            const sortedExample = sampleString.split('').sort().join('');
+            console.log(`Sorted string for '${sampleString}':`, sortedExample);  // Output: 'abeemrstw'
+        }
+
+        // Call the example function to display output in console
+        exampleSortString();
+    </script>
+</body>
+</html>
